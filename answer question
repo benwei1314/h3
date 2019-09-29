@@ -1,0 +1,14 @@
+What code draws the blades of grass?
+function draw() {
+  stroke(random(150, 70), 100, 90);
+  line(x, height-10, x+random(-50, 10), height-10-random(h));
+  noStroke();
+What code makes the "lawnmower" come by? How often does it come by?
+if (random(100) > 99.9) {        //create a random grass between 100 to 99 start at low number to high number. 100>300 lesser chance to cut. 100>20 more chance to cut
+    fill(255);
+    rect(0, 0, width, height-15);
+    h = 10;                
+What's the point of the h variable?
+//h if grass is 10 it cuts all the grass
+What does the -10 do in the second and fourth arguments of the line function, height-10-random(h) ? Why is it there?
+//it angles the grass so it's verticle 
